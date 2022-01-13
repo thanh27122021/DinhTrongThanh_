@@ -31,7 +31,7 @@ namespace Cau1
         {
             this.checkBoxGT = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxDV = new System.Windows.Forms.ComboBox();
+            this.ComboxDV = new System.Windows.Forms.ComboBox();
             this.tbMa = new System.Windows.Forms.TextBox();
             this.dgvEmployee = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,13 +73,13 @@ namespace Cau1
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã";
             // 
-            // comboBoxDV
+            // ComboxDV
             // 
-            this.comboBoxDV.FormattingEnabled = true;
-            this.comboBoxDV.Location = new System.Drawing.Point(104, 66);
-            this.comboBoxDV.Name = "comboBoxDV";
-            this.comboBoxDV.Size = new System.Drawing.Size(151, 28);
-            this.comboBoxDV.TabIndex = 2;
+            this.ComboxDV.FormattingEnabled = true;
+            this.ComboxDV.Location = new System.Drawing.Point(104, 66);
+            this.ComboxDV.Name = "ComboxDV";
+            this.ComboxDV.Size = new System.Drawing.Size(151, 28);
+            this.ComboxDV.TabIndex = 2;
             // 
             // tbMa
             // 
@@ -267,7 +267,7 @@ namespace Cau1
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.tbLocation);
             this.Controls.Add(this.tbMa);
-            this.Controls.Add(this.comboBoxDV);
+            this.Controls.Add(this.ComboxDV);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -276,6 +276,7 @@ namespace Cau1
             this.Controls.Add(this.checkBoxGT);
             this.Name = "EmployeeGUI";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.EmployeeGUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -286,7 +287,7 @@ namespace Cau1
 
         private System.Windows.Forms.CheckBox checkBoxGT;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBoxDV;
+        private System.Windows.Forms.ComboBox ComboxDV;
         private System.Windows.Forms.TextBox tbMa;
         private System.Windows.Forms.DataGridView dgvEmployee;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
